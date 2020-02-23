@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/waiting"
+        android:icon="@drawable/ic_favorites"
+        android:title="En Attend" />
+
+    <item
+        android:id="@+id/running"
+        android:icon="@drawable/ic_recent"
+        android:title="En cours" />
+
+
+
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/ic_nearby"
+        android:title="Deja Fait" />
+
+</menu>

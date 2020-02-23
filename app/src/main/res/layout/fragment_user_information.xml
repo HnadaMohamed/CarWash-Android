@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    tools:context=".fragment.UserInformation">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_middle"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="User information"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorPrimaryDark"
+        app:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/EditText.Flat.Grey.Small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Name"
+            android:minHeight="@dimen/spacing_xmlarge" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/EditText.Flat.Grey.Small"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Phone"
+            android:minHeight="@dimen/spacing_xmlarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/address"
+                style="@style/EditText.Flat.Grey.Small"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:hint="Address"
+                android:minHeight="@dimen/spacing_xmlarge" />
+
+
+            <View
+                android:layout_width="@dimen/spacing_middle"
+                android:layout_height="10dp" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lyt_next"
+                style="@style/RippleStyleWhite"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimaryLight">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick Location"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="@dimen/spacing_smlarge"
+                        android:layout_marginLeft="@dimen/spacing_medium"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        android:tint="@android:color/white"
+                        app:srcCompat="@drawable/ic_location" />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

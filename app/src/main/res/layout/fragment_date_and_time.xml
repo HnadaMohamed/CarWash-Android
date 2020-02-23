@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    tools:context=".fragment.DateAndTime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:gravity="center"
+            android:text="Date"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorPrimaryDark"
+            app:fontFamily="sans-serif-medium" />
+
+        <Button
+            android:id="@+id/date"
+            style="@style/EditText.Flat.Grey.Small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:background="@drawable/edit_text_round_bg_outline"
+            android:hint="Pick date"
+            android:minHeight="@dimen/spacing_xmlarge"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Time"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorPrimaryDark"
+            app:fontFamily="sans-serif-medium" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:layout_height="match_parent">
+                <GridView
+                    android:id="@+id/timeListe"
+                    android:numColumns="3"
+                    android:layout_width="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:choiceMode="singleChoice"
+                    android:listSelector="@color/colorAccent"
+                    android:layout_height="match_parent">
+
+                </GridView>
+
+
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
