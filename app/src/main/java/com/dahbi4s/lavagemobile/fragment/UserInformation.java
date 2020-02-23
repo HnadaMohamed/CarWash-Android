@@ -105,7 +105,6 @@ public class UserInformation extends Fragment {
                 new PlacePicker.IntentBuilder()
                         .accessToken("pk.eyJ1IjoiaG5hZGEiLCJhIjoiY2s1anV5a3J5MDZ2dzNscWlmMXYzaGw3ZSJ9.3ZUT88xIW9LBHBY7rF8mQA")
                         .placeOptions(PlacePickerOptions.builder()
-
                                 .statingCameraPosition(new CameraPosition.Builder()
 
                                         .target(new LatLng(35.5784500, -5.3683700)).zoom(12).build())
